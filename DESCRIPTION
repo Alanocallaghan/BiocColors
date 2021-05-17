@@ -1,0 +1,17 @@
+Package: BiocColors
+Title: Color palettes for Bioconductor
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alan",
+           family = "O'Callaghan",
+           role = c("aut", "cre"),
+           email = "alan.ocallaghan@outlook.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: 
+    A common home for a range of colour palettes for use
+    in data visualisations acrosss different Bioconductor packages.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
