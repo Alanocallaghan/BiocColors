@@ -5,8 +5,10 @@ Authors@R:
     person(given = "Alan",
            family = "O'Callaghan",
            role = c("aut", "cre"),
-           email = "alan.ocallaghan@outlook.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "alan.ocallaghan@outlook.com"),
+           given = "Daniel",
+           family = "Bunis",
+           role = c("aut")))
 Description: 
     A common home for a range of colour palettes for use
     in data visualisations acrosss different Bioconductor packages.
