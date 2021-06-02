@@ -1,6 +1,6 @@
 #' Extracts the dittoSeq default colors
 #' @author Daniel Bunis
-#' @param reps Integer which sets how many times the original set of colors should be repeated
+#' @param n Integer which controls how many colors should be retrieved.
 #' @param get.names Logical, whether only the names of the default dittoSeq color panel should be returned instead
 #' @return A string vector with length = 24.
 #' @description Creates a string vector of 40 unique colors, in hexadecimal form, repeated 100 times.
@@ -40,7 +40,7 @@
 #'
 #' #To retrieve names:
 #' dittoColors(get.names = TRUE)
-dittoColors <- function(reps = 100, get.names = FALSE) {
+dittoColors <- function(n = 100, get.names = FALSE) {
     if (get.names) {
         cols <- c(
             "orange", "skyBlue", "bluishGreen", "yellow",
@@ -54,18 +54,8 @@ dittoColors <- function(reps = 100, get.names = FALSE) {
             "orange-40%", "skyBlue-40%", "bluishGreen-40%", "yellow-40%",
             "blue-40%", "vermillion-40%", "reddishPurple-40%", "gray40-40%")
     } else {
-        cols <- c(  # Colors as of dittoSeq-v0.2.10
-            "#E69F00", "#56B4E9", "#009E73", "#F0E442",
-            "#0072B2", "#D55E00", "#CC79A7", "#666666",
-            "#AD7700", "#1C91D4", "#007756", "#D5C711",
-            "#005685", "#A04700", "#B14380", "#4D4D4D",
-            "#FFBE2D", "#80C7EF", "#00F6B3", "#F4EB71",
-            "#06A5FF", "#FF8320", "#D99BBD", "#8C8C8C",
-            "#FFCB57", "#9AD2F2", "#2CFFC6", "#F6EF8E",
-            "#38B7FF", "#FF9B4D", "#E0AFCA", "#A3A3A3",
-            "#8A5F00", "#1674A9", "#005F45", "#AA9F0D",
-            "#00446B", "#803800", "#8D3666", "#3D3D3D")
+        cols <- biocColors("ditto", n)
     }
-    return(rep(cols, reps))
+    return(rep(cols, n))
 }
 

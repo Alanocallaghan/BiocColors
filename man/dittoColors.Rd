@@ -4,10 +4,10 @@
 \alias{dittoColors}
 \title{Extracts the dittoSeq default colors}
 \usage{
-dittoColors(reps = 100, get.names = FALSE)
+dittoColors(n = 100, get.names = FALSE)
 }
 \arguments{
-\item{reps}{Integer which sets how many times the original set of colors should be repeated}
+\item{n}{Integer which controls how many colors should be retrieved.}
 
 \item{get.names}{Logical, whether only the names of the default dittoSeq color panel should be returned instead}
 }
